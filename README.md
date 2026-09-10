@@ -18,6 +18,6 @@ To keep things organized, the repository is structured as follows:
 * **Version Control:** Git & GitHub Desktop
 
 ## 📝 Dev Log
-> Learn basic TCP socket programming. Build a simple echo server and client using socket(), bind(), listen(), accept(), connect(), send(), recv(), and close().
+> Learn TCP socket functions in detail: socket(), bind(), listen(), accept(), connect(). Understand server flow (socket → bind → listen → accept) and client flow (socket → connect).
 ---
 *The deeper you go, the more powerful C++ becomes.* 🔥
