@@ -18,6 +18,6 @@ To keep things organized, the repository is structured as follows:
 * **Version Control:** Git & GitHub Desktop
 
 ## 📝 Dev Log
-> Learn TCP socket functions in detail: socket(), bind(), listen(), accept(), connect(). Understand server flow (socket → bind → listen → accept) and client flow (socket → connect).
+> Learn send() and recv() for TCP socket communication. Practice sending and receiving data between server and client.
 ---
 *The deeper you go, the more powerful C++ becomes.* 🔥
