@@ -18,6 +18,6 @@ To keep things organized, the repository is structured as follows:
 * **Version Control:** Git & GitHub Desktop
 
 ## 📝 Dev Log
-> Learn send() and recv() for TCP socket communication. Practice sending and receiving data between server and client.
+> Learn sockaddr_in structure and inet_pton(). Understand how to set up address for server (INADDR_ANY) and client (inet_pton for specific IP).
 ---
 *The deeper you go, the more powerful C++ becomes.* 🔥
