@@ -18,6 +18,6 @@ To keep things organized, the repository is structured as follows:
 * **Version Control:** Git & GitHub Desktop
 
 ## 📝 Dev Log
-> Learn sockaddr_in structure and inet_pton(). Understand how to set up address for server (INADDR_ANY) and client (inet_pton for specific IP).
+> Learn byte order (htons, htonl, ntohs, ntohl). Understand why network byte order (big-endian) is needed when sending integers over the network.
 ---
 *The deeper you go, the more powerful C++ becomes.* 🔥
