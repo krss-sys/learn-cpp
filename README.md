@@ -18,6 +18,6 @@ To keep things organized, the repository is structured as follows:
 * **Version Control:** Git & GitHub Desktop
 
 ## 📝 Dev Log
-> Learn byte order (htons, htonl, ntohs, ntohl). Understand why network byte order (big-endian) is needed when sending integers over the network.
+> Learn partial read/write issue in TCP. Understand that send()/recv() may not transfer all bytes in one call. Practice sendAll() and recvAll() loops with length prefix.
 ---
 *The deeper you go, the more powerful C++ becomes.* 🔥
