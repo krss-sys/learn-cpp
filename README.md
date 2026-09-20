@@ -18,6 +18,6 @@ To keep things organized, the repository is structured as follows:
 * **Version Control:** Git & GitHub Desktop
 
 ## 📝 Dev Log
-> Learn partial read/write issue in TCP. Understand that send()/recv() may not transfer all bytes in one call. Practice sendAll() and recvAll() loops with length prefix.
+> Learn getaddrinfo() as a portable replacement for inet_pton. Understand hints, addrinfo structure, freeaddrinfo, and IPv4/IPv6 support.
 ---
 *The deeper you go, the more powerful C++ becomes.* 🔥
