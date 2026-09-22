@@ -18,6 +18,6 @@ To keep things organized, the repository is structured as follows:
 * **Version Control:** Git & GitHub Desktop
 
 ## 📝 Dev Log
-> Learn getaddrinfo() as a portable replacement for inet_pton. Understand hints, addrinfo structure, freeaddrinfo, and IPv4/IPv6 support.
+> Learn UDP socket programming with sendto() and recvfrom(). Understand connectionless communication, why UDP is faster but unreliable, and compare with TCP.
 ---
 *The deeper you go, the more powerful C++ becomes.* 🔥
