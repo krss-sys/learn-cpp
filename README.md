@@ -18,6 +18,6 @@ To keep things organized, the repository is structured as follows:
 * **Version Control:** Git & GitHub Desktop
 
 ## 📝 Dev Log
-> Learn UDP socket programming with sendto() and recvfrom(). Understand connectionless communication, why UDP is faster but unreliable, and compare with TCP.
+> Learn recv() and the 3 return cases in TCP echo server (n > 0 data, n == 0 EOF, n < 0 error). Now switching to repo-driven learning: learn C++ networking topics on demand while building Aether Stream Layer.
 ---
 *The deeper you go, the more powerful C++ becomes.* 🔥
