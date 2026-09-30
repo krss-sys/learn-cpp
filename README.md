@@ -18,6 +18,6 @@ To keep things organized, the repository is structured as follows:
 * **Version Control:** Git & GitHub Desktop
 
 ## 📝 Dev Log
-> Learn recv() and the 3 return cases in TCP echo server (n > 0 data, n == 0 EOF, n < 0 error). Now switching to repo-driven learning: learn C++ networking topics on demand while building Aether Stream Layer.
+> Learn safe socket I/O with send_all() and recv_some(). Handle partial write, EINTR retry, and SIGPIPE prevention with MSG_NOSIGNAL. Build a TCP echo server using these wrappers.
 ---
 *The deeper you go, the more powerful C++ becomes.* 🔥
