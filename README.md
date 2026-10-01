@@ -18,6 +18,6 @@ To keep things organized, the repository is structured as follows:
 * **Version Control:** Git & GitHub Desktop
 
 ## 📝 Dev Log
-> Learn safe socket I/O with send_all() and recv_some(). Handle partial write, EINTR retry, and SIGPIPE prevention with MSG_NOSIGNAL. Build a TCP echo server using these wrappers.
+> Learn thread-per-connection model. Each client gets its own worker thread, main thread only accepts. Use shared_ptr<FileDescriptor> for socket ownership and detach() for non-blocking workers.
 ---
 *The deeper you go, the more powerful C++ becomes.* 🔥
