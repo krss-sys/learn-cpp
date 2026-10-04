@@ -18,6 +18,6 @@ To keep things organized, the repository is structured as follows:
 * **Version Control:** Git & GitHub Desktop
 
 ## 📝 Dev Log
-> Learn thread-per-connection model. Each client gets its own worker thread, main thread only accepts. Use shared_ptr<FileDescriptor> for socket ownership and detach() for non-blocking workers.
+> Learn thread-safe logger with std::mutex and lock_guard. Handle race condition on cerr and use localtime_r (thread-safe) instead of localtime. Build log string with ostringstream before locking to minimize lock time.
 ---
 *The deeper you go, the more powerful C++ becomes.* 🔥
