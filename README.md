@@ -18,6 +18,6 @@ To keep things organized, the repository is structured as follows:
 * **Version Control:** Git & GitHub Desktop
 
 ## 📝 Dev Log
-> Learn thread-safe logger with std::mutex and lock_guard. Handle race condition on cerr and use localtime_r (thread-safe) instead of localtime. Build log string with ostringstream before locking to minimize lock time.
+> Learn std::atomic for thread-safe counters and RAII ConnectionGuard. Understand why int++ causes data race, why atomic is lighter than mutex, and how RAII ensures count-- is never forgotten on any exit path.
 ---
 *The deeper you go, the more powerful C++ becomes.* 🔥
