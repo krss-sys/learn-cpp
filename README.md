@@ -16,8 +16,5 @@ To keep things organized, the repository is structured as follows:
 * **Compiler:** GCC (Linux Native)
 * **IDE/Editor:** VS Code (with WSL & C/C++ Extension Pack)
 * **Version Control:** Git & GitHub Desktop
-
-## 📝 Dev Log
-> Learn std::atomic for thread-safe counters and RAII ConnectionGuard. Understand why int++ causes data race, why atomic is lighter than mutex, and how RAII ensures count-- is never forgotten on any exit path.
 ---
 *The deeper you go, the more powerful C++ becomes.* 🔥
