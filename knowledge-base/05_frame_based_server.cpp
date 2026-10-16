@@ -1,21 +1,22 @@
-#include <iostream>
-#include <vector>
-#include <cstring>
-#include <optional>
 #include <arpa/inet.h>
 #include <sys/socket.h>
 #include <unistd.h>
+
+#include <cstring>
+#include <iostream>
+#include <optional>
+#include <vector>
 using namespace std;
 
 constexpr uint32_t kMaxFrameSize = 1 << 20;
 
 // ==================== FRAMEDECODER (đã học) ====================
 class FrameDecoder {
-private:
+   private:
     vector<uint8_t> buf_;
     bool error_ = false;
 
-public:
+   public:
     void feed(const uint8_t* data, size_t n) {
         if (error_) return;
         buf_.insert(buf_.end(), data, data + n);
@@ -52,12 +53,13 @@ bool send_all(int fd, const void* data, size_t len) {
 
     while (total_sent < len) {
         ssize_t n = ::send(fd, ptr + total_sent, len - total_sent, MSG_NOSIGNAL);
-        if (n > 0) total_sent += static_cast<size_t>(n);
+        if (n > 0)
+            total_sent += static_cast<size_t>(n);
         else if (n < 0) {
             if (errno == EINTR) continue;
             return false;
-        }
-        else return false;
+        } else
+            return false;
     }
     return true;
 }
@@ -112,12 +114,10 @@ void handle_connection(int clientFd) {
                 cerr << "[WARN] Frame qua lon. Dong ket noi." << endl;
                 return;
             }
-        }
-        else if (n == 0) {
+        } else if (n == 0) {
             cout << "Client dong ket noi." << endl;
             return;
-        }
-        else {
+        } else {
             cerr << "Recv error: " << strerror(errno) << endl;
             return;
         }
